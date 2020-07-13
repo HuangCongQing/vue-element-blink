@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue Element Admin',
+  title: '博灵(Blink)科技 ',
 
   /**
    * @type {boolean} true | false
@@ -17,7 +17,7 @@ module.exports = {
    * @type {boolean} true | false
    * @description Whether fix the header
    */
-  fixedHeader: false,
+  fixedHeader: true, //固定导航栏
 
   /**
    * @type {boolean} true | false
