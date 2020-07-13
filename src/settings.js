@@ -17,7 +17,7 @@ module.exports = {
    * @type {boolean} true | false
    * @description Whether fix the header
    */
-  fixedHeader: true, //固定导航栏
+  fixedHeader: true, // 固定导航栏
 
   /**
    * @type {boolean} true | false
