@@ -3,7 +3,14 @@
 
 项目基于[PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)开发
 
+## Todo List
 
+* [ ] axios接口打通
+* [ ] 权限管理
+* [ ] 丰富图表展示
+    * [ ] (字段 | 全局)搜索 
+    * [ ] 选择时间段展示
+    * [ ] Export(导出）pdf/excel/zip
 
 
 
