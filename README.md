@@ -3,6 +3,11 @@
 
 项目基于[PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)开发
 
+## 技术栈
+
+* 前端：vue-element-admin
+* 后端(接口)：Python/egg.js(node.js) + MySQL
+
 ## Todo List
 
 * [ ] axios接口打通
