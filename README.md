@@ -1,7 +1,15 @@
+<!--
+ * @Description: 
+ * @Author: HCQ
+ * @Company(School): UCAS
+ * @Date: 2020-07-13 22:06:21
+ * @LastEditors: HCQ
+ * @LastEditTime: 2020-07-14 10:21:12
+--> 
 # vue-element-blink
 博灵（Blink)科技Web
 
-项目基于[PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)开发
+@[双愚](https://github.com/HuangCongQing/vue-element-blink) 项目基于[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)开发
 
 ## 技术栈
 
@@ -56,4 +64,4 @@ npm run build:prod
 
 [MIT](https://github.com/HuangCongQing/vue-element-blink/blob/master/LICENSE)
 
-Copyright (c) 2020-present 双愚
+Copyright (c) 2020-present [双愚](https://github.com/HuangCongQing/vue-element-blink)
