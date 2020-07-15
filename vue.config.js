@@ -36,6 +36,14 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    proxy: { // 配置跨域
+      [process.env.VUE_APP_BASE_API]: {
+        target: 'http://news.at.zhihu.com', // 这里后台的地址模拟的;应该填写你们真实的后台接口
+        changOrigin: true, // 允许跨域
+        pathRewrite: {
+          ['^' + process.env.VUE_APP_BASE_API]: '' // 请求的时候使用这个api就可以
+        }
+      },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {

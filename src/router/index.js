@@ -225,6 +225,20 @@ export const asyncRoutes = [
     component: () => import('@/views/pdf/download'),
     hidden: true
   },
+  // 测试
+  {
+    path: '/test',
+    component: Layout,
+    redirect: '/test/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/test/index'),
+        name: 'test',
+        meta: { title: 'test', icon: 'pdf' }
+      }
+    ]
+  },
 
   {
     path: 'external-link',
