@@ -32,6 +32,7 @@ module.exports = {
   devServer: {
     port: port,
     open: true,
+    // https: false, // 是否是https
     overlay: {
       warnings: false,
       errors: true
@@ -45,7 +46,7 @@ module.exports = {
         }
       }
     },
-    before: require('./mock/mock-server.js')
+    before: require('./mock/mock-server.js') // 删除会在登陆页面 error
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that

@@ -3,7 +3,7 @@ import request from '@/utils/request'
 export function testList() {
   return request({
     url: '/api/4/news/latest',
-    method: 'get',
-    baseURL: 'http://news.at.zhihu.com' // 直接通过覆盖的方式
+    method: 'get'
+    // baseURL: 'http://news.at.zhihu.com' // 直接通过覆盖的方式
   })
 }
