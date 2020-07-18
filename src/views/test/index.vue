@@ -36,6 +36,7 @@ export default {
       this.listLoading = true
       testList().then(res => {
         this.list = res.data.stories
+        console.log('aaaaaaaaaaaaaaaaaaaaa')
         console.log(this.list)
         this.listLoading = false
       })
