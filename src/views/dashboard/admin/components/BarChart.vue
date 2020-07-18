@@ -62,7 +62,7 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['物料批次1', '物料批次2', '物料批次3', '物料批次4', '物料批次5', '物料批次6', '物料批次7'],
           axisTick: {
             alignWithLabel: true
           }
@@ -74,21 +74,42 @@ export default {
           }
         }],
         series: [{
-          name: 'pageA',
+          name: '崩缺',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
           data: [79, 52, 200, 334, 390, 330, 220],
           animationDuration
         }, {
-          name: 'pageB',
+          name: '裂纹',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
           data: [80, 52, 200, 334, 390, 330, 220],
           animationDuration
         }, {
-          name: 'pageC',
+          name: '凸点',
+          type: 'bar',
+          stack: 'vistors',
+          barWidth: '60%',
+          data: [30, 52, 200, 334, 390, 330, 220],
+          animationDuration
+        }, {
+          name: '结晶',
+          type: 'bar',
+          stack: 'vistors',
+          barWidth: '60%',
+          data: [30, 52, 200, 334, 390, 330, 220],
+          animationDuration
+        }, {
+          name: '起孔',
+          type: 'bar',
+          stack: 'vistors',
+          barWidth: '60%',
+          data: [30, 52, 200, 334, 390, 330, 220],
+          animationDuration
+        }, {
+          name: '欠磨',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
