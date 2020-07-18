@@ -7,18 +7,51 @@
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
-
+    <!-- 雷达图 -->
+    <el-row :gutter="32">
+      <el-col>
+        <el-time-select
+          v-model="startTime"
+          placeholder="起始时间"
+          :picker-options="{
+            start: '08:30',
+            step: '00:15',
+            end: '18:30'
+          }"
+        />
+        <el-time-select
+          v-model="endTime"
+          placeholder="结束时间"
+          :picker-options="{
+            start: '08:30',
+            step: '00:15',
+            end: '18:30',
+            minTime: startTime
+          }"
+        />
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-button type="primary">型号1磁瓦</el-button>
+      <el-button type="primary">型号3磁瓦</el-button>
+      <el-button type="primary">型号3磁瓦</el-button>
+      <el-button type="primary">型号4磁瓦</el-button>
+    </el-row>
     <el-row :gutter="32">
       <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
           <raddar-chart />
         </div>
       </el-col>
+    </el-row>
+    <el-row :gutter="32">
       <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
           <pie-chart />
         </div>
       </el-col>
+    </el-row>
+    <el-row :gutter="32">
       <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
           <bar-chart />
@@ -90,7 +123,9 @@ export default {
   },
   data() {
     return {
-      lineChartData: lineChartData.newVisitis
+      lineChartData: lineChartData.newVisitis,
+      startTime: '',
+      endTime: ''
     }
   },
   methods: {
