@@ -44,6 +44,45 @@
         </div>
       </el-col>
     </el-row>
+    <!-- 扇形图 -->
+    <el-row :gutter="32">
+      <el-col>
+        <el-time-select
+          v-model="startTime"
+          placeholder="起始时间"
+          :picker-options="{
+            start: '08:30',
+            step: '00:15',
+            end: '18:30'
+          }"
+        />
+        <el-time-select
+          v-model="endTime"
+          placeholder="结束时间"
+          :picker-options="{
+            start: '08:30',
+            step: '00:15',
+            end: '18:30',
+            minTime: startTime
+          }"
+        />
+      </el-col>
+    </el-row>
+    <!-- 可搜索下拉框 -->
+    <el-row>
+      <el-button type="primary">型号1磁瓦</el-button>
+      <el-button type="primary">型号3磁瓦</el-button>
+      <el-button type="primary">型号3磁瓦</el-button>
+      <el-button type="primary">型号4磁瓦</el-button>
+    </el-row>
+    <el-select v-model="value" clearable filterable placeholder="请选择缺陷类型">
+      <el-option
+        v-for="item in options"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value"
+      />
+    </el-select>
     <el-row :gutter="32">
       <el-col :xs="24" :sm="24" :lg="8">
         <div class="chart-wrapper">
@@ -125,7 +164,28 @@ export default {
     return {
       lineChartData: lineChartData.newVisitis,
       startTime: '',
-      endTime: ''
+      endTime: '',
+      // 可搜索下拉框
+      options: [{
+        value: '选项1',
+        label: '崩缺'
+      }, {
+        value: '选项2',
+        label: '裂纹'
+      }, {
+        value: '选项3',
+        label: '凸点'
+      }, {
+        value: '选项4',
+        label: '结晶'
+      }, {
+        value: '选项5',
+        label: '起孔'
+      }, {
+        value: '选项5',
+        label: '欠磨'
+      }],
+      value: ''
     }
   },
   methods: {
