@@ -18,12 +18,13 @@
 
 ## Todo List
 
-* [x] axios接口打通
+* [ ] axios接口打通
 * [ ] 权限管理
 * [ ] 丰富图表展示
-    * [ ] (字段 | 全局)搜索 
-    * [ ] 选择时间段展示
+    * [x] (字段 | 全局)搜索 
+    * [x] 选择时间段展示
     * [ ] Export(导出）pdf/excel/zip
+* [ ] 部署发布npm run build:prod
 
 
 
