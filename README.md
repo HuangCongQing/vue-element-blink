@@ -25,7 +25,7 @@
     * [x] 选择时间段展示
     * [ ] Export(导出）pdf/excel/zip
 * [ ] 部署发布npm run build:prod
-
+* [ ] 实时1min刷新数据库
 
 
 
