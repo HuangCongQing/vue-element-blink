@@ -184,7 +184,7 @@ export default {
         value: '选项5',
         label: '起孔'
       }, {
-        value: '选项5',
+        value: '选项6',
         label: '欠磨'
       }],
       value: ''
