@@ -25,6 +25,7 @@ export default {
       .then(function(res) {
         _this.toplist = res.data.top_stories
         _this.list = res.data.stories
+        console.log('=============================================')
         console.log(_this.list)
       })
       .catch(function(error) {
