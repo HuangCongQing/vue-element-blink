@@ -39,11 +39,16 @@ module.exports = {
     },
     proxy: { // 配置跨域
       [process.env.VUE_APP_BASE_API]: {
-        target: 'http://news.at.zhihu.com',
+        target: 'https://news.at.zhihu.com',
+        // target: process.env.VUE_APP_SERVICE_URL, // 在.env.development中配置
         // target: 'http://127.0.0.1:7003', // 跨域目标主机,这里后台的地址模拟的;应该填写你们真实的后台接口
         // ws: true, // 代理 websockets
         changOrigin: true, // 允许跨域
-        pathRewrite: {
+        pathRewrite: { // 重写路径
+        // 会将'/dev-api'替换为‘’，已经是/dev-api会移除
+          // 原请求地址为 /api/getData 将'/api'替换''时，
+          // 代理后的请求地址为： http://xxx.xxx.xxx/getData
+          // 若替换为'/other',则代理后的请求地址为 http://xxx.xxx.xxx/other/getData
           ['^' + process.env.VUE_APP_BASE_API]: '' //  //选择忽略拦截器里面的单词请求的时候使用这个api就可以 // 重写地址
         }
       }

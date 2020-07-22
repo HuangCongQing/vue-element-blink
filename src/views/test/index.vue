@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import { testList } from '@/api/test'
-// import axios from 'axios'
+// import { testList } from '@/api/test'
+import axios from 'axios'
 
 export default {
   data() {
@@ -19,28 +19,28 @@ export default {
     }
   },
   created() {
-    this.fetchData()
-    // const _this = this
-    // axios.get('/api/4/news/latest')
-    //   .then(function(res) {
-    //     _this.toplist = res.data.top_stories
-    //     _this.list = res.data.stories
-    //     console.log(_this.list)
-    //   })
-    //   .catch(function(error) {
-    //     console.log(error)
-    //   })
+    // this.fetchData()
+    const _this = this
+    axios.get('/api/4/news/latest')
+      .then(function(res) {
+        _this.toplist = res.data.top_stories
+        _this.list = res.data.stories
+        console.log(_this.list)
+      })
+      .catch(function(error) {
+        console.log(error)
+      })
   },
   methods: {
-    fetchData() {
-      this.listLoading = true
-      testList().then(res => {
-        this.list = res.data.stories
-        console.log('aaaaaaaaaaaaaaaaaaaaa')
-        console.log(this.list)
-        this.listLoading = false
-      })
-    }
+    // fetchData() {
+    //   this.listLoading = true
+    //   testList().then(res => {
+    //     this.list = res.data.stories
+    //     console.log('aaaaaaaaaaaaaaaaaaaaa')
+    //     console.log(this.list)
+    //     this.listLoading = false
+    //   })
+    // }
   }
 }
 </script>
