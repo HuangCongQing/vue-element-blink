@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Date: 2020-07-13 22:06:21
  * @LastEditors: HCQ
- * @LastEditTime: 2020-07-14 10:21:12
+ * @LastEditTime: 2020-07-23 19:37:19
 --> 
 # vue-element-blink
 博灵（Blink)科技Web
@@ -27,7 +27,9 @@
 * [ ] 部署发布npm run build:prod
 * [ ] 实时1min刷新数据库
 
+## 界面效果
 
+![效果图](https://cdn.nlark.com/yuque/0/2020/png/232596/1595504200539-5e4f62ec-4320-4168-8832-88c298aeb7e7.png)
 
 ## 开发
 
