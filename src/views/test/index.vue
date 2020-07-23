@@ -21,10 +21,10 @@ export default {
   created() {
     // this.fetchData()
     const _this = this
-    axios.get('/api/4/news/latest')
+    axios.get('/ciwa')
       .then(function(res) {
         _this.toplist = res.data.top_stories
-        _this.list = res.data.stories
+        _this.list = res.data
         console.log('=============================================')
         console.log(_this.list)
       })
