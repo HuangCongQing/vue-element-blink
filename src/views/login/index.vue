@@ -45,7 +45,7 @@
         </el-form-item>
       </el-tooltip>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登 陆</el-button>
 
       <div style="position:relative">
         <div class="tips">
@@ -83,22 +83,34 @@ export default {
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
-        callback(new Error('Please enter the correct user name'))
+        callback(new Error('请输入正确用户名'))
       } else {
         callback()
       }
     }
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error('The password can not be less than 6 digits'))
+        callback(new Error('密码不能少于6位'))
       } else {
+        // if (value !== this.userdata[0].password) {
+        //   callback(new Error('密码错误'))
+        // }
         callback()
       }
     }
     return {
+      userdata:
+        [{
+          username: 'admin', // 账号
+          password: '111111'// 默认密码
+        },
+        {
+          username: 'admin', // 账号
+          password: '111111'// 默认密码
+        }],
       loginForm: {
         username: 'admin', // 账号
-        password: '111111'// 密码
+        password: '111111'// 默认密码
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -126,6 +138,9 @@ export default {
   },
   created() {
     // window.addEventListener('storage', this.afterQRScan)
+    const _this = this
+    console.log('======================this=========================')
+    console.log(_this.userdata[0].password)
   },
   mounted() {
     if (this.loginForm.username === '') {
