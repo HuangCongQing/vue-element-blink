@@ -69,19 +69,34 @@ export const constantRoutes = [
     path: '/401',
     component: () => import('@/views/error-page/401'),
     hidden: true
-  },
-  {
+  }, {
     path: '/',
     component: Layout,
     redirect: '/dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: '首页', icon: 'dashboard', affix: true }
+    children: [{
+      path: 'dashboard',
+      component: () => import('@/views/dashboard/index'),
+      name: 'Dashboard',
+      meta: {
+        title: '首页',
+        icon: 'dashboard',
+        affix: true
       }
-    ]
+    }]
+  }, {
+    path: '/3d',
+    component: Layout,
+    redirect: '/3d',
+    children: [{
+      path: 'dashboard',
+      component: () => import('@/views/dashboard/admin/components/Model3D'),
+      name: 'Dashboard',
+      meta: {
+        title: '3D',
+        icon: 'dashboard',
+        affix: true
+      }
+    }]
   },
 
   {

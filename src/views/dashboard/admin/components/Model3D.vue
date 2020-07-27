@@ -1,10 +1,9 @@
 <template>
   <div class="model-group">
     <div 大家好 />
-    <model-obj 
+    <model-obj
       src="../../../../../public/CombatMech_low.obj"
-      scale="{ x: 0.8, y: 0.8, z: 0.8 }"
-      background-color="rgb(0,0,0)"
+      background-color="#8f8f8f"
     />
     <!-- src\views\dashboard\admin\components\Model3D.vue -->
   </div>
