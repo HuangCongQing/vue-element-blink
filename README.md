@@ -26,6 +26,8 @@
     * [ ] Export(导出）pdf/excel/zip
 * [ ] 部署发布npm run build:prod
 * [ ] 实时1min刷新数据库
+* [ ] 三维展示磁瓦obj格式
+* [ ] 界面美观度 布局
 
 ## 界面效果
 
