@@ -100,16 +100,16 @@
       </el-col>
     </el-row>
 
-    <!-- <el-row>
+    <el-row>
       <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 24}" :xl="{span: 24}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table />
       </el-col>
-    </el-row> -->
-    <el-row>
+    </el-row>
+    <!-- <el-row>
       <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 24}" :xl="{span: 24}" style="padding-right:8px;margin-bottom:30px;">
         <Model3D />
       </el-col>
-    </el-row>
+    </el-row> -->
   </div>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="model-group">
     <model-obj
-      class="model-group"
       src="CombatMech_low.obj"
       mtl="CombatMech_low.mtl"
       background-color="#13ce66"
