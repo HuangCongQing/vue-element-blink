@@ -152,7 +152,7 @@ import waves from '@/directive/waves' // waves directive
 import { parseTime } from '@/utils'
 import Pagination from '@/components/Pagination' // secondary package based on el-pagination
 
-// 所用数据： mock\article.js
+// 所用数据： mock/article.js
 const calendarTypeOptions = [
   { key: 'CN', display_name: 'China' },
   { key: 'US', display_name: 'USA' },
@@ -229,8 +229,8 @@ export default {
   },
   created() {
     this.getList()
-    print('==========this.row===============')
-    print(this.row)
+    // print('==========this.row===============')
+    print(this.row) // 此命令会触发下载Google浏览器pdf界面
   },
   methods: {
     getList() {
