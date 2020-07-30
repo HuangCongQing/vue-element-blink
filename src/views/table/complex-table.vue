@@ -230,7 +230,7 @@ export default {
   created() {
     this.getList()
     // print('==========this.row===============')
-    print(this.row) // 此命令会触发下载Google浏览器pdf界面
+    // print(this.row) // 此命令会触发下载Google浏览器pdf界面
   },
   methods: {
     getList() {
