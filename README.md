@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Date: 2020-07-13 22:06:21
  * @LastEditors: HCQ
- * @LastEditTime: 2020-07-30 17:20:50
+ * @LastEditTime: 2020-07-30 17:26:32
 --> 
 # vue-element-blink
 博灵（Blink)科技Web
@@ -20,8 +20,9 @@
 
 ## Todo List
 
-* [x] axios接口打通
-* [ ] 权限管理
+* [ ] axios接口打通
+    * [ ] localhost:error问题
+* [x] 权限管理
 * [ ] 丰富图表展示
     * [x] (字段 | 全局)搜索 
     * [x] 选择时间段展示
