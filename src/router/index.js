@@ -9,7 +9,7 @@ import Layout from '@/layout'
 /* Router Modules */
 // import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
-import tableRouter from './modules/table'
+// import tableRouter from './modules/table'
 // import nestedRouter from './modules/nested' // 下拉菜单界面
 
 /**
@@ -167,7 +167,7 @@ export const asyncRoutes = [
   // componentsRouter,
   chartsRouter,
   // nestedRouter,
-  tableRouter,
+  // tableRouter,
 
   // {
   //   path: '/excel',
@@ -242,23 +242,23 @@ export const asyncRoutes = [
   //   hidden: true
   // },
   // 测试
-  {
-    path: '/test',
-    component: Layout,
-    redirect: '/test/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/test/index'),
-        name: 'test',
-        meta: {
-          title: '数据接口测试',
-          icon: 'pdf',
-          roles: ['editor']
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/test',
+  //   component: Layout,
+  //   redirect: '/test/index',
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/test/index'),
+  //       name: 'test',
+  //       meta: {
+  //         title: '数据接口测试',
+  //         icon: 'pdf',
+  //         roles: ['editor']
+  //       }
+  //     }
+  //   ]
+  // },
 
   {
     path: 'external-link',
