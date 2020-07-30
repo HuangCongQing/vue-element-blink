@@ -88,11 +88,11 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/3d',
     children: [{
-      path: 'dashboard',
+      path: '3d',
       component: () => import('@/views/dashboard/admin/components/Model3D'),
-      name: 'Dashboard',
+      name: '3d',
       meta: {
-        title: '3D',
+        title: '3D展示',
         icon: 'dashboard',
         affix: true
       }
