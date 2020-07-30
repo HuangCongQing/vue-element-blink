@@ -32,10 +32,10 @@
       </el-col>
     </el-row>
     <el-row style="margin-bottom:32px;">
-      <el-button type="primary">型号1磁瓦</el-button>
-      <el-button type="primary">型号3磁瓦</el-button>
-      <el-button type="primary">型号3磁瓦</el-button>
-      <el-button type="primary">型号4磁瓦</el-button>
+      <el-button type="primary">型号A磁瓦</el-button>
+      <el-button type="primary">型号B磁瓦</el-button>
+      <el-button type="primary">型号C磁瓦</el-button>
+      <el-button type="primary">型号D磁瓦</el-button>
     </el-row>
     <el-row :gutter="32" style="margin-bottom:32px;">
       <el-col :xs="24" :sm="24" :lg="8">
@@ -70,10 +70,10 @@
     </el-row>
     <!-- 可搜索下拉框 -->
     <el-row style="margin-bottom:32px;">
-      <el-button type="primary">型号1磁瓦</el-button>
-      <el-button type="primary">型号3磁瓦</el-button>
-      <el-button type="primary">型号3磁瓦</el-button>
-      <el-button type="primary">型号4磁瓦</el-button>
+      <el-button type="primary">型号A磁瓦</el-button>
+      <el-button type="primary">型号B磁瓦</el-button>
+      <el-button type="primary">型号C磁瓦</el-button>
+      <el-button type="primary">型号D磁瓦</el-button>
     </el-row>
     <el-select v-model="value" clearable filterable placeholder="请选择缺陷类型" style="margin-bottom:32px;">
       <el-option

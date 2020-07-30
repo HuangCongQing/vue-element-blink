@@ -7,7 +7,7 @@
         </div>
         <div class="card-panel-description"><!-- 型号磁瓦 -->
           <div class="card-panel-text">
-            型号1磁瓦
+            型号A磁瓦
           </div>
           <div class="card-panel-text">
             <count-to :start-val="0" :end-val="101200" :duration="2600" class="card-panel-num1" />
@@ -24,7 +24,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            型号2磁瓦
+            型号B磁瓦
           </div>
           <div class="card-panel-text">
             <count-to :start-val="0" :end-val="101200" :duration="2600" class="card-panel-num1" />
@@ -41,7 +41,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            型号3磁瓦
+            型号C磁瓦
           </div>
           <div class="card-panel-text">
             <count-to :start-val="0" :end-val="101200" :duration="2600" class="card-panel-num1" />
@@ -58,7 +58,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            型号4磁瓦
+            型号D磁瓦
           </div>
           <div class="card-panel-text">
             <count-to :start-val="0" :end-val="101200" :duration="2600" class="card-panel-num1" />
