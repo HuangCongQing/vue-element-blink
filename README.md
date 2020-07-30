@@ -36,6 +36,7 @@
 ## 前序准备(软件安装)
 
 * 本地需安装： [node](http://nodejs.org/) 、[git](https://git-scm.com/) 和 [mysql (目前暂时不需要)](https://www.mysql.com/)。
+> 注意可能会因为版本问题报错，要注意
 
 * 学习了解：本项目技术栈基于 [ES2015+](http://es6.ruanyifeng.com/)、[vue](https://cn.vuejs.org/index.html)、[vuex](https://vuex.vuejs.org/zh-cn/)、[vue-router](https://router.vuejs.org/zh-cn/) 、[vue-cli](https://github.com/vuejs/vue-cli) 、[axios](https://github.com/axios/axios) 、 [element-ui](https://github.com/ElemeFE/element) ，提前了解和学习这些知识会对使用本项目有很大的帮助。
 

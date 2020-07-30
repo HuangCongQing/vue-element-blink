@@ -1,8 +1,7 @@
 <template>
   <div class="model-group">
     <model-obj
-      src="CombatMech_low.obj"
-      mtl="CombatMech_low.mtl"
+      src="ciwa730_kuan/ciwa730_kuan.obj"
       background-color="#13ce66"
       width="1000"
       height="630"

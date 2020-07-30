@@ -29,12 +29,12 @@ for (let i = 0; i < count; i++) {
 
 module.exports = [
   {
-    url: '/vue-element-admin/article/list',
+    url: '/vue-element-admin/article/list', //  文章列表
     type: 'get',
     response: config => {
       const { importance, type, title, page = 1, limit = 20, sort } = config.query
 
-      let mockList = List.filter(item => {
+      let mockList = List.filter(item => { // List
         if (importance && item.importance !== +importance) return false
         if (type && item.type !== type) return false
         if (title && item.title.indexOf(title) < 0) return false
@@ -58,7 +58,7 @@ module.exports = [
   },
 
   {
-    url: '/vue-element-admin/article/detail',
+    url: '/vue-element-admin/article/detail', //  文章内容
     type: 'get',
     response: config => {
       const { id } = config.query
