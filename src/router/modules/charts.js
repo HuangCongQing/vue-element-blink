@@ -28,7 +28,7 @@ const chartsRouter = {
       path: 'mix-chart',
       component: () => import('@/views/charts/mix-chart'),
       name: 'MixChart',
-      meta: { title: 'Mix Chart', noCache: true }
+      meta: { title: '数据统计', noCache: true }
     }
   ]
 }

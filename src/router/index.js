@@ -252,7 +252,7 @@ export const asyncRoutes = [
         component: () => import('@/views/test/index'),
         name: 'test',
         meta: {
-          title: 'test',
+          title: '数据接口测试',
           icon: 'pdf',
           roles: ['editor']
         }
