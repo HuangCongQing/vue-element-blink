@@ -125,7 +125,7 @@ import Model3D from './components/Model3D'
 
 const lineChartData = { // 数据
   newVisitis: {
-    expectedData: [100, 120, 161, 134, 105, 160, 165],
+    expectedData: [130, 120, 161, 164, 175, 160, 165],
     actualData: [120, 82, 91, 154, 162, 140, 145]
     // expectedData: [
     //   { name: '2016/12/18 6:38:08', value: ['2016/12/18 6:38:08', 80] },
@@ -138,15 +138,15 @@ const lineChartData = { // 数据
     // ]
   },
   messages: {
-    expectedData: [200, 192, 120, 144, 160, 130, 140],
+    expectedData: [200, 192, 160, 144, 160, 150, 140],
     actualData: [180, 160, 151, 106, 145, 150, 130]
   },
   purchases: {
-    expectedData: [80, 100, 121, 104, 105, 90, 100],
+    expectedData: [121, 100, 121, 144, 145, 140, 130],
     actualData: [120, 90, 100, 138, 142, 130, 130]
   },
   shoppings: {
-    expectedData: [130, 140, 141, 142, 145, 150, 160],
+    expectedData: [130, 140, 141, 162, 165, 150, 160],
     actualData: [120, 82, 91, 154, 162, 140, 130]
   }
 }
