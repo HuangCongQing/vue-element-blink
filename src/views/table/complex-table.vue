@@ -228,6 +228,8 @@ export default {
   },
   created() {
     this.getList()
+    print('==========this.row===============')
+    print(this.row)
   },
   methods: {
     getList() {
