@@ -1,7 +1,10 @@
 <template>
   <div class="app-container">
     <div class="filter-container">
-      <el-input v-model="listQuery.title" placeholder="CiwaType" style="width: 100px;" class="filter-item" @keyup.enter.native="handleFilter" />
+      <!-- <el-input v-model="listQuery.title" placeholder="CiwaType" style="width: 100px;" class="filter-item" @keyup.enter.native="handleFilter" /> -->
+      <el-select v-model="listQuery.title" placeholder="CiwaType" clearable style="width: 140px" class="filter-item">
+        <el-option v-for="item in CiwaTypeOptions" :key="item" :label="item" :value="item" />
+      </el-select>
       <el-select v-model="listQuery.pageviews" placeholder="DefectType" clearable style="width: 140px" class="filter-item">
         <el-option v-for="item in importanceOptions" :key="item" :label="item" :value="item" />
       </el-select>
@@ -187,6 +190,7 @@ export default {
         type: undefined,
         sort: '+id'
       },
+      CiwaTypeOptions: ['A', 'B', 'C', 'D'],
       importanceOptions: ['0', '崩缺', '气孔', '凸点', '欠磨', '裂纹', '结晶'], //  DefectType  0  崩缺 气孔 凸点 欠磨 裂纹 结晶
       DefectPosOptions: ['0', '外弧面', '纵切面', '顶角', '内弧面', '端面'], // 0 外弧面 纵切面  顶角  内弧面 端面
       calendarTypeOptions,
