@@ -1,9 +1,10 @@
 <template>
-  <div class="model-group">
+  <div>
     <model-obj
+      class="model-group"
       src="CombatMech_low.obj"
       mtl="CombatMech_low.mtl"
-      background-color="#fff"
+      background-color="#13ce66"
       width="1000"
       height="630"
       @on-load="onLoad"
@@ -40,7 +41,9 @@ export default {
 }
 </script>
 <style scoped>
-/* .model-group{
+.model-group{
+  border: 2px #000;
+  box-shadow:0px 0px 10px #000;
 
-} */
+}
 </style>
