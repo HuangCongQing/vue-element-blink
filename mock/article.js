@@ -453,11 +453,11 @@ module.exports = [
     url: '/vue-element-admin/article/list', //  文章列表
     type: 'get',
     response: config => {
-      const { importance, type, title, page = 1, limit = 20, sort } = config.query
+      const { title, pageviews, DefectPos, page = 1, limit = 20, sort } = config.query
 
       let mockList = List.filter(item => { // List
-        if (importance && item.importance !== +importance) return false
-        if (type && item.type !== type) return false
+        if (pageviews && item.pageviews !== pageviews) return false
+        if (DefectPos && item.DefectPos !== DefectPos) return false
         if (title && item.title.indexOf(title) < 0) return false
         return true
       })
