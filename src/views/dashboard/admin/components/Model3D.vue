@@ -2,7 +2,7 @@
   <div class="model-group">
     <model-obj
       src="ciwa730_kuan/ciwa730_kuan.obj"
-      background-color="#13ce66"
+      background-color="#ccc"
       width="1000"
       height="630"
       @on-load="onLoad"

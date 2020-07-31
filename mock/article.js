@@ -195,7 +195,7 @@ const List = [
     importance: 'SB2020B006', // 5 MaterialNum
     pageviews: '凸点', // Readings 6 DefectType  查询 ['0', '崩缺', '气孔', '凸点', '欠磨', '裂纹', '结晶']
     DefectPos: '崩缺', // 7 DefectPos  查询  0 外弧面 纵切面  顶角  内弧面 端面
-    Accepted: 1, // 8 Accepted 1
+    Accepted: '0', // 8 Accepted 1
     reviewer: '@first',
     content_short: 'mock data',
     content: baseContent,

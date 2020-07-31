@@ -70,20 +70,23 @@
       </el-table-column>
       <el-table-column label="DefectType" align="center" width="120">
         <template slot-scope="{row}">
-          <span v-if="row.pageviews" class="link-type" @click="handleFetchPv(row.pageviews)">{{ row.pageviews }}</span>
-          <span v-else>0</span>
+          <!-- <span v-if="row.pageviews" class="link-type" @click="handleFetchPv(row.pageviews)">{{ row.pageviews }}</span>
+          <span v-else>0</span> -->
+          <el-tag :type="row.pageviews === '0' ? '' : 'danger'">
+            {{ row.pageviews }}
+          </el-tag>
         </template>
       </el-table-column>
       <el-table-column label="DefectPos" class-name="status-col" width="100">
         <template slot-scope="{row}">
-          <el-tag>
+          <el-tag :type="row.DefectPos === '0' ? '' : 'danger'">
             {{ row.DefectPos }}
           </el-tag>
         </template>
       </el-table-column>
       <el-table-column label="Accepted" align="center" width="130" class-name="small-padding fixed-width">
         <template slot-scope="{row}">
-          <el-tag :type="row.Accepted ">
+          <el-tag :type="row.Accepted === 1 ? 'success' : 'danger'">
             {{ row.Accepted }}
           </el-tag>
         </template>
