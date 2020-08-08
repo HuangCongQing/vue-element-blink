@@ -7,6 +7,12 @@
       height="630"
       @on-load="onLoad"
     />
+    <ModelStl
+      src="ceshi/ceshi.stl"
+      background-color="#ccc"
+      width="1000"
+      height="630"
+    />
     <!--  :rotation="rotation" -->
     <!-- src\views\dashboard\admin\components\Model3D.vue -->
   </div>
@@ -14,10 +20,10 @@
 
 <script>
 // 路径应该写public下路径，而不是绝对路径或相对路径
-import { ModelObj } from 'vue-3d-model'
+import { ModelObj, ModelStl } from 'vue-3d-model'
 
 export default {
-  components: { ModelObj },
+  components: { ModelObj, ModelStl },
   data: function() {
     return {
       rotation: {
