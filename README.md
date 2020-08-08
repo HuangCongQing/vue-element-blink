@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Date: 2020-07-13 22:06:21
  * @LastEditors: HCQ
- * @LastEditTime: 2020-07-30 17:26:32
+ * @LastEditTime: 2020-08-08 22:04:30
 --> 
 # vue-element-blink
 博灵（Blink)科技Web
@@ -75,6 +75,8 @@ npm run build:stage
 npm run build:prod
 ```
 ## 界面效果
+
+网站：http://47.111.11.212/
 
 ![效果图](https://cdn.nlark.com/yuque/0/2020/png/232596/1595504200539-5e4f62ec-4320-4168-8832-88c298aeb7e7.png)
 
