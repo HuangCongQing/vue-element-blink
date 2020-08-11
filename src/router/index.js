@@ -259,6 +259,25 @@ export const asyncRoutes = [
   //     }
   //   ]
   // },
+   // 柱形树图
+   {
+     path: '/disk',
+     component: Layout,
+     redirect: '/disk/index',
+     children: [
+       {
+         path: 'index',
+         component: () => import('@/views/disk/index'),
+         name: 'disk',
+         meta: {
+           title: '柱形树图',
+           icon: 'pdf',
+           affix: true,
+           roles: ['editor']
+         }
+       }
+     ]
+   },
 
   {
     path: 'external-link',
