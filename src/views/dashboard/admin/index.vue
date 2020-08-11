@@ -120,8 +120,8 @@ import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
 import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
-import TransactionTable from './components/TransactionTable'
-import Model3D from './components/Model3D'
+// import TransactionTable from './components/TransactionTable'
+// import Model3D from './components/Model3D'
 
 const lineChartData = { // 数据
   newVisitis: {
@@ -159,9 +159,9 @@ export default {
     LineChart,
     RaddarChart,
     PieChart,
-    BarChart,
-    TransactionTable,
-    Model3D
+    BarChart
+    // TransactionTable,
+    // Model3D
   },
   data() {
     return {
