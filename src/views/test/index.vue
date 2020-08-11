@@ -21,7 +21,7 @@ export default {
   created() {
     // this.fetchData()
     const _this = this
-    axios.get('/ciwa')
+    axios.get('/getciwa')
       .then(function(res) {
         _this.toplist = res.data.top_stories
         _this.list = res.data
