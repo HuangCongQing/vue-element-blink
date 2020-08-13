@@ -26,11 +26,13 @@
     * [x] (字段 | 全局)搜索 
     * [x] 选择时间段展示
     * [x] Export(导出）pdf/excel/zip
-* [ ] 三维展示磁瓦obj格式
+* [x] 三维展示磁瓦obj格式
+* [x] 每隔1min请求下接口
+
 * [ ] axios接口打通
     * [ ] localhost:error问题
 * [ ] 部署发布npm run build:prod 【error】
-* [ ] 每隔1min请求下接口
+
 * [ ] 界面美观度 布局
 ### 磁瓦信息界面
 * 添加Add信息
