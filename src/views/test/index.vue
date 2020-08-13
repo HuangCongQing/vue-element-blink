@@ -19,19 +19,36 @@ export default {
     }
   },
   created() {
-    // this.fetchData()
-    const _this = this
-    axios.get('/getciwa')
-      .then(function(res) {
-        _this.list = res.data
-        console.log('=============================================')
-        console.log(_this.list)
-      })
-      .catch(function(error) {
-        console.log(error)
-      })
+    this.fetchData()
+  },
+  mounted() {
+    if (this.timer) {
+      clearInterval(this.timer)
+    } else {
+      this.timer = setInterval(() => {
+        this.fetchData()
+      }, 60000) // 60s请求一次数据
+    }
+  },
+  destroyed() {
+    console.log(' 销毁定时器 ')
+    clearInterval(this.timer)
   },
   methods: {
+    fetchData() {
+      this.listLoading = true
+      const _this = this
+      axios.get('/getciwa')
+        .then(function(res) {
+          _this.list = res.data
+          console.log('=============================================')
+          console.log(_this.list)
+          this.listLoading = false
+        })
+        .catch(function(error) {
+          console.log(error)
+        })
+    }
     // fetchData() {
     //   this.listLoading = true
     //   testList().then(res => {
