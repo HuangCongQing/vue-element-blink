@@ -23,7 +23,6 @@ export default {
     const _this = this
     axios.get('/getciwa')
       .then(function(res) {
-        _this.toplist = res.data.top_stories
         _this.list = res.data
         console.log('=============================================')
         console.log(_this.list)
