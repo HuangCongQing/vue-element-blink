@@ -12,11 +12,7 @@
 export default {
   data: function() {
     return {
-      rotation: {
-        x: 0,
-        y: 0,
-        z: -Math.PI / 20
-      }
+      rotation: []
     }
   },
   created() {
@@ -32,11 +28,22 @@ export default {
         opacity: 1
       },
       logo: {
-        src: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+        right: '8px', // 距右边 40px
+        bottom: '8px', // 距底边 100px
+        width: '40px', // logo 宽度，小于 40px 为 40px
+        src: 'https://img95.699pic.com/photo/40011/0709.jpg_wh860.jpg', // 修改为公司logo
         href: 'http://47.111.11.212/'
+      },
+      toolbar: {
+        visible: true,
+        modules: {
+          tree: {
+            visible: true,
+            label: '结构树',
+          },
+        }
       }
     }
-
     // api 是否已经加载成够的标志位
     let apiLoaded = false
 
