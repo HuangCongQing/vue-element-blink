@@ -39,33 +39,33 @@
     </el-row>
     <el-row :gutter="32" style="margin-bottom:32px;">
       <!-- <el-col :span="24" :xs="24" :sm="24" :lg="8"> -->
-        <div class="chart-wrapper">
-          <raddar-chart />
-        </div>
+      <div class="chart-wrapper">
+        <raddar-chart />
+      </div>
       <!-- </el-col> -->
     </el-row>
     <!-- 扇形图 -->
     <el-row :gutter="32" style="margin-bottom:32px;">
       <!-- <el-col :span="24"> -->
-        <el-time-select
-          v-model="startTime"
-          placeholder="起始时间"
-          :picker-options="{
-            start: '08:30',
-            step: '00:15',
-            end: '18:30'
-          }"
-        />
-        <el-time-select
-          v-model="endTime"
-          placeholder="结束时间"
-          :picker-options="{
-            start: '08:30',
-            step: '00:15',
-            end: '18:30',
-            minTime: startTime
-          }"
-        />
+      <el-time-select
+        v-model="startTime"
+        placeholder="起始时间"
+        :picker-options="{
+          start: '08:30',
+          step: '00:15',
+          end: '18:30'
+        }"
+      />
+      <el-time-select
+        v-model="endTime"
+        placeholder="结束时间"
+        :picker-options="{
+          start: '08:30',
+          step: '00:15',
+          end: '18:30',
+          minTime: startTime
+        }"
+      />
       <!-- </el-col> -->
     </el-row>
     <!-- 可搜索下拉框 -->
@@ -86,17 +86,17 @@
     <!-- 扇形图 -->
     <el-row :gutter="32">
       <!-- <el-col :xs="24" :sm="24" :lg="8"> -->
-        <div class="chart-wrapper">
-          <pie-chart />
-        </div>
+      <div class="chart-wrapper">
+        <pie-chart />
+      </div>
       <!-- </el-col> -->
     </el-row>
     <!-- 柱状图 -->
     <el-row :gutter="32">
       <!-- <el-col :xs="24" :sm="24" :lg="8"> -->
-        <div class="chart-wrapper">
-          <bar-chart />
-        </div>
+      <div class="chart-wrapper">
+        <bar-chart />
+      </div>
       <!-- </el-col> -->
     </el-row>
 

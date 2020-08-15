@@ -1,8 +1,8 @@
 {
-  "name": "vue-element-admin",
-  "version": "4.4.0",
+  "name": "vue-element-blink",
+  "version": "0.1.0",
   "description": "A magical vue admin. An out-of-box UI solution for enterprise applications. Newest development stack of vue. Lots of awesome features",
-  "author": "Pan <panfree23@gmail.com>",
+  "author": "hcq <1756260160@qq.com>",
   "scripts": {
     "dev": "vue-cli-service serve",
     "lint": "eslint --ext .js,.vue src",
@@ -107,6 +107,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PanJiaChen/vue-element-admin.git"
+    "url": "git+https://github.com/HuangCongQing/vue-element-blink.git"
   }
 }
