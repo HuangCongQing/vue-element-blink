@@ -33,7 +33,7 @@ export default {
         width: '40px', // logo 宽度，小于 40px 为 40px
         src: 'https://img95.699pic.com/photo/40011/0709.jpg_wh860.jpg', // 修改为公司logo
         href: 'http://47.111.11.212/'
-      },
+      }
       // toolbar: {
       //   visible: true,
       //   modules: {
