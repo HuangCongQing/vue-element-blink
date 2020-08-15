@@ -22,7 +22,7 @@ export default {
     },
     height: {
       type: String,
-      default: '300px'
+      default: '500px'
     }
   },
   data() {
@@ -47,6 +47,13 @@ export default {
       this.chart = echarts.init(this.$el, 'macarons')
 
       this.chart.setOption({
+        // grid: {
+        //   left: 10,
+        //   right: 10,
+        //   bottom: 20,
+        //   top: 30,
+        //   containLabel: true
+        // },
         tooltip: {
           trigger: 'axis',
           axisPointer: { // 坐标轴指示器，坐标轴触发有效

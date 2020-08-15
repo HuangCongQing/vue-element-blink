@@ -1,7 +1,7 @@
 <template>
   <div class="model-group">
     <!-- <h2>EverAPI Demo</h2> -->
-    <div id="root" style="width: 1300px; height: 600px;" />
+    <div id="root" style="width: 1300px; height: 800px;" />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     const config = {
       cache: {
         enabled: true,
-        key: 'id',
+        key: 'ciwa730_kuan/ciwa730_kuan.obj',
         database: 'EverAPI_Models'
       },
       background: {
@@ -34,15 +34,15 @@ export default {
         src: 'https://img95.699pic.com/photo/40011/0709.jpg_wh860.jpg', // 修改为公司logo
         href: 'http://47.111.11.212/'
       },
-      toolbar: {
-        visible: true,
-        modules: {
-          tree: {
-            visible: true,
-            label: '结构树',
-          },
-        }
-      }
+      // toolbar: {
+      //   visible: true,
+      //   modules: {
+      //     tree: {
+      //       visible: true,
+      //       label: '结构树',
+      //     },
+      //   }
+      // }
     }
     // api 是否已经加载成够的标志位
     let apiLoaded = false
@@ -58,7 +58,7 @@ export default {
         // { path: 'ciwa730_kuan/ciwa730_kuan.obj', name: 'ciwa730_kuan' },
         // { path: 'ciwa730_kuan/ciwa730_kuan.mtl', name: 'ciwa730_kuan' },
         // { path: 'ciwa730_kuan/ciwa730_kuan.jpg', name: 'ciwa730_kuan.jpg' }
-        { filename: 'ciwa730_kuan.obj', url: 'ciwa730_kuan/ciwa730_kuan.obj', mtl: 'ciwa730_kuan/ciwa730_kuan.mtl' }
+        { filename: 'ciwa730_kuan.obj', url: 'ciwa730_kuan/ciwa730_kuan.obj' }
       ]
       // console.log(files)
       api.render('root', files)

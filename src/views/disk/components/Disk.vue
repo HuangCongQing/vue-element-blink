@@ -15,10 +15,10 @@ export default {
     this.demoData = [
       {
         'name': '型号A磁瓦',
-        'value': 2000,
+        'value': 1000,
         children: [{
           name: '外缺陷', // First leaf of first tree
-          value: 1000,
+          value: 300,
           children: [{
             name: '崩缺', // First leaf of first tree
             value: 100
@@ -27,20 +27,20 @@ export default {
             value: 100
           }, {
             name: '凸点', // Second leaf of first tree
-            value: 200
+            value: 50
           }, {
             name: '欠磨', // Second leaf of first tree
-            value: 300
+            value: 50
           }, {
             name: '裂纹', // Second leaf of first tree
-            value: 100
+            value: 0
           }, {
             name: '结晶', // Second leaf of first tree
-            value: 200
+            value: 0
           }]
         }, {
           name: '内缺陷', // Second leaf of first tree
-          value: 1000,
+          value: 700,
           children: [{
             name: '裂纹', // First leaf of first tree
             value: 100
@@ -49,7 +49,7 @@ export default {
             value: 200
           }, {
             name: '夹渣', // Second leaf of first tree
-            value: 700
+            value: 400
           }]
         }]
       },
@@ -95,7 +95,7 @@ export default {
       },
       {
         'name': '型号C磁瓦',
-        'value': 2000,
+        'value': 1500,
         children: [{
           name: '外缺陷', // First leaf of first tree
           value: 1000,
@@ -120,7 +120,7 @@ export default {
           }]
         }, {
           name: '内缺陷', // Second leaf of first tree
-          value: 1000,
+          value: 500,
           children: [{
             name: '裂纹', // First leaf of first tree
             value: 100
@@ -129,7 +129,7 @@ export default {
             value: 200
           }, {
             name: '夹渣', // Second leaf of first tree
-            value: 700
+            value: 200
           }]
         }]
       },
@@ -138,10 +138,10 @@ export default {
         'value': 2000,
         children: [{
           name: '外缺陷', // First leaf of first tree
-          value: 1000,
+          value: 600,
           children: [{
             name: '崩缺', // First leaf of first tree
-            value: 100
+            value: 300
           }, {
             name: '气孔', // Second leaf of first tree
             value: 100
@@ -150,13 +150,13 @@ export default {
             value: 200
           }, {
             name: '欠磨', // Second leaf of first tree
-            value: 300
+            value: 0
           }, {
             name: '裂纹', // Second leaf of first tree
-            value: 100
+            value: 0
           }, {
             name: '结晶', // Second leaf of first tree
-            value: 200
+            value: 0
           }]
         }, {
           name: '内缺陷', // Second leaf of first tree

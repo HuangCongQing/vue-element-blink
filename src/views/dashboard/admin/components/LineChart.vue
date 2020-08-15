@@ -64,7 +64,7 @@ export default {
     setOptions({ expectedData, actualData } = {}) {
       this.chart.setOption({
         title: {
-          text: 'XX年XX月XX日磁瓦检测数据总览'
+          text: '2020年08月15日磁瓦检测数据总览'
         },
         legend: {
           data: ['磁瓦总数', '良品数']
@@ -72,7 +72,7 @@ export default {
         xAxis: {
           // type: 'time',
           // interval: 1000 * 3600, // 可设置显示间隔 1h
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['9：00', '11：00', '13：00', '15：00', '17：00', '19：00', '21：00'],
           boundaryGap: false,
           axisTick: {
             show: false
@@ -80,7 +80,7 @@ export default {
         },
         grid: {
           left: 10,
-          right: 10,
+          right: 20,
           bottom: 20,
           top: 30,
           containLabel: true
