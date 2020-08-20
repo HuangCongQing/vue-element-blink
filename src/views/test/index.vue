@@ -38,7 +38,7 @@ export default {
     fetchData() {
       this.listLoading = true
       const _this = this
-      axios.get('/getciwa')
+      axios.get('/api/getciwa')
         .then(function(res) {
           _this.list = res.data
           console.log('=============================================')

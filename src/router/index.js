@@ -242,23 +242,23 @@ export const asyncRoutes = [
   //   hidden: true
   // },
   // 测试
-  // {
-  //   path: '/test',
-  //   component: Layout,
-  //   redirect: '/test/index',
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       component: () => import('@/views/test/index'),
-  //       name: 'test',
-  //       meta: {
-  //         title: '数据接口测试',
-  //         icon: 'pdf',
-  //         roles: ['editor']
-  //       }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/test',
+    component: Layout,
+    redirect: '/test/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/test/index'),
+        name: 'test',
+        meta: {
+          title: '数据接口测试',
+          icon: 'pdf',
+          roles: ['editor']
+        }
+      }
+    ]
+  },
   // 柱形树图
   {
     path: '/disk',
