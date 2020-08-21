@@ -34,6 +34,7 @@
 * [ ] 部署发布npm run build:prod 【error】
 
 * [ ] 界面美观度 布局
+* [ ] logo图片添加
 ### 磁瓦信息界面
 * 添加Add信息
 * 
