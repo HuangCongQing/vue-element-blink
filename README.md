@@ -4,7 +4,7 @@
  * @Company(School): UCAS
  * @Date: 2020-07-13 22:06:21
  * @LastEditors: HCQ
- * @LastEditTime: 2020-08-08 22:04:30
+ * @LastEditTime: 2020-08-26 00:21:39
 --> 
 # vue-element-blink
 博灵（Blink)科技Web
@@ -35,6 +35,8 @@
 
 * [ ] 界面美观度 布局
 * [ ] logo图片添加
+* [ ] 图表优化
+* [ ] 数据库接口开发
 ### 磁瓦信息界面
 * 添加Add信息
 * 
