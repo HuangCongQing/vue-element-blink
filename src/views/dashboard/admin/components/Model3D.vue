@@ -49,7 +49,9 @@ export default {
 
     // 新建 api 实例
     // 构造函数的前两个参数分别是 AppID 和 AppKey，这里的参数可用于本地 localhost:9000 调试
-    const api = new EverAPI('033fd2d77bf8', '485e2f93e538f4a173ea28c17c6044a0', config)
+    const api = new EverAPI('6103ec4a2189', 'cc239b39cd09383aba9b1310db8cf334', config)
+    // 线上ID（下行使用时许把上面一行注释）
+    // const api = new EverAPI('033fd2d77bf8', '485e2f93e538f4a173ea28c17c6044a0', config)
 
     // api 加载成功后调用 loadApi 函数
     window.addEventListener('oneverapiloaded', () => {
