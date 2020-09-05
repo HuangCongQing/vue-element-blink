@@ -50,7 +50,7 @@ export default {
         backgroundColor: '#333',
         title: {
           top: 0, // 位置
-          text: '不同供应商物料批次良品率分布图', // 分布图名字
+          text: '不同物料批次缺陷分布图', // 分布图名字
           left: 'center',
           textStyle: {
             color: '#eee',
