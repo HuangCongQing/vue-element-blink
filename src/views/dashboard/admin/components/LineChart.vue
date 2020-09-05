@@ -82,7 +82,7 @@ export default {
           left: 10,
           right: 20,
           bottom: 20,
-          top: 30,
+          top: 40,
           containLabel: true
         },
         tooltip: {
@@ -101,9 +101,9 @@ export default {
           {
             name: '磁瓦总数', itemStyle: {
               normal: {
-                color: '#FF005A',
+                color: '#3888fa',
                 lineStyle: {
-                  color: '#FF005A',
+                  color: '#3888fa',
                   width: 2
                 }
               }
@@ -120,9 +120,9 @@ export default {
             type: 'line',
             itemStyle: {
               normal: {
-                color: '#3888fa',
+                color: '#FF005A',
                 lineStyle: {
-                  color: '#3888fa',
+                  color: '#FF005A',
                   width: 2
                 },
                 areaStyle: {
