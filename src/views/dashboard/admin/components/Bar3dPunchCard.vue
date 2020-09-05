@@ -98,7 +98,7 @@ export default {
           }
         },
         series: [{
-          type: 'bar3D', // 此组件不存在
+          type: 'bar3D', // npm install echarts-gl --save
           data: this.data.map(function(item) {
             return {
               value: [item[1], item[0], item[2]]
