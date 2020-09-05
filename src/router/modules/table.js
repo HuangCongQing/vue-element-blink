@@ -34,7 +34,12 @@ const tableRouter = {
       path: 'complex-table',
       component: () => import('@/views/table/complex-table'),
       name: 'ComplexTable',
-      meta: { title: '磁瓦信息统计' }
+      meta: {
+        title: '磁瓦信息统计',
+        icon: 'excel',
+        affix: true,
+        roles: ['editor']
+      }
     }
   ]
 }

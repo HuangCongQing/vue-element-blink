@@ -93,7 +93,7 @@ export const constantRoutes = [
       name: '3d',
       meta: {
         title: '3D展示',
-        icon: 'dashboard',
+        icon: '3D',
         affix: true
       }
     }]
@@ -271,7 +271,7 @@ export const asyncRoutes = [
         name: 'disk',
         meta: {
           title: '缺陷磁瓦分布',
-          icon: 'pdf',
+          icon: 'component',
           affix: true,
           roles: ['editor']
         }
