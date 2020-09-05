@@ -7,6 +7,14 @@
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
+    <!-- 磁瓦平面铺开对应的缺陷数据分布图' -->
+    <el-row :gutter="32">
+      <!-- <el-col :xs="24" :sm="24" :lg="8"> -->
+      <div class="chart-wrapper">
+        <bar3d-punch-card />
+      </div>
+      <!-- </el-col> -->
+    </el-row>
     <!-- 雷达图 -->
     <el-row :gutter="32" style="margin-bottom:32px;">
       <el-col>
@@ -130,7 +138,7 @@ import BarChart from './components/BarChart'
 // import TransactionTable from './components/TransactionTable'
 // import Model3D from './components/Model3D'
 import ParallelAqi from './components/ParallelAqi'
-
+import Bar3dPunchCard from './components/Bar3dPunchCard'
 const lineChartData = { // 数据
   newVisitis: {
     expectedData: [130, 120, 161, 164, 175, 160, 165],
@@ -170,7 +178,8 @@ export default {
     BarChart,
     // TransactionTable,
     // Model3D
-    ParallelAqi
+    ParallelAqi,
+    Bar3dPunchCard
   },
   data() {
     return {
