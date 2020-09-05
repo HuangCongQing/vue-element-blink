@@ -178,7 +178,7 @@ export default {
   },
   methods: {
     initChart() {
-      const myChart = echarts.init(document.getElementById(`treemap_cxt`))
+      const myChart = echarts.init(document.getElementById(`treemap_cxt`), 'light')
       // style
       function getLevelOption() {
         return [
@@ -193,6 +193,7 @@ export default {
             }
           },
           {
+            // color: ['#22DDff', '#2BD5ff', '#22DDff'],
             itemStyle: {
               borderColor: '#555',
               borderWidth: 5,
@@ -205,6 +206,7 @@ export default {
             }
           },
           {
+            // color: ['#22DDff', '#2BD5ff', '#22DDff'],
             colorSaturation: [0.35, 0.5],
             itemStyle: {
               borderWidth: 5,
