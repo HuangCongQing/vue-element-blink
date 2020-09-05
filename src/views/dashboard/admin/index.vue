@@ -110,6 +110,13 @@
         <Model3D />
       </el-col>
     </el-row> -->
+    <el-row :gutter="32">
+      <!-- <el-col :xs="24" :sm="24" :lg="8"> -->
+      <div class="chart-wrapper">
+        <parallel-aqi />
+      </div>
+      <!-- </el-col> -->
+    </el-row>
   </div>
 </template>
 
@@ -122,6 +129,7 @@ import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
 // import TransactionTable from './components/TransactionTable'
 // import Model3D from './components/Model3D'
+import ParallelAqi from './components/ParallelAqi'
 
 const lineChartData = { // 数据
   newVisitis: {
@@ -159,9 +167,10 @@ export default {
     LineChart,
     RaddarChart,
     PieChart,
-    BarChart
+    BarChart,
     // TransactionTable,
     // Model3D
+    ParallelAqi
   },
   data() {
     return {
