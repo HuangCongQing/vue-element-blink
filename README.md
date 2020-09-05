@@ -11,6 +11,9 @@
 
 @[双愚](https://github.com/HuangCongQing/vue-element-blink) 项目基于[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)开发
 
+线上网址：http://47.111.11.212/
+
+
 ## 技术栈
 
 * 前端：vue-element-admin
