@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       title: '博灵(Blink)科技',
-      logo: 'https://cdn.nlark.com/yuque/0/2020/png/232596/1599126317067-0278efe8-43bb-43b4-a645-262e53380f2a.png' // 修改logo
+      logo: 'logo.png' // 修改logo
     }
   }
 }
