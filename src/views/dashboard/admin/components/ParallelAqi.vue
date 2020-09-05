@@ -22,7 +22,7 @@ export default {
     },
     height: {
       type: String,
-      default: '500px'
+      default: '550px'
     }
   },
   data() {
@@ -163,12 +163,11 @@ export default {
       this.chart.setOption({
         backgroundColor: '#333',
         title: {
-          top: 0, // 位置
+          top: 5, // 位置
           text: '不同供应商物料批次良品率分布图', // 分布图名字
           left: 'center',
           textStyle: {
             color: '#eee',
-            fontSize: 18
           }
         },
         legend: {
@@ -228,6 +227,7 @@ export default {
         parallel: {
           left: '5%',
           right: '15%',
+          top: 80,
           bottom: 70, // 底部位置
           parallelAxisDefault: {
             type: 'value',

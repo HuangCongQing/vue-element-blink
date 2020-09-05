@@ -1,3 +1,11 @@
+<!--
+ * @Description: 
+ * @Author: HCQ
+ * @Company(School): UCAS
+ * @Date: 2020-08-11 21:45:59
+ * @LastEditors: HCQ
+ * @LastEditTime: 2020-09-05 14:05:17
+-->
 <template>
   <div :class="className" :style="{height:height,width:width}" />
 </template>
@@ -45,6 +53,16 @@ export default {
       this.chart = echarts.init(this.$el, 'macarons')
 
       this.chart.setOption({
+        backgroundColor: '#161627',
+        title: {
+          top: 0, // 位置
+          text: '不同供应商物料批次良品率分布图', // 分布图名字
+          left: 'center',
+          textStyle: {
+            color: '#eee',
+            fontSize: 18
+          }
+        },
         tooltip: {
           trigger: 'item',
           formatter: '{a} <br/>{b} : {c} ({d}%)'
@@ -52,7 +70,11 @@ export default {
         legend: {
           left: 'center',
           bottom: '10',
-          data: ['内弧面', '外弧面', '端面', '纵切面', '顶角']
+          data: ['内弧面', '外弧面', '端面', '纵切面', '顶角'],
+          textStyle: {
+            color: '#fff',
+            fontSize: 14
+          }
         },
         series: [
           {
