@@ -34,15 +34,15 @@
 
 * [x] axios接口打通
     * [x] localhost:error问题
-* [ ] 部署发布npm run build:prod 【error】
+* [x] 部署发布npm run build:prod 【error】
 
-* [ ] 界面美观度 布局
+* [x] 界面美观度 布局
 * [x] logo图片添加
-* [ ] 图表图标优化
+* [x] 图表图标优化
 * [ ] 数据库接口开发
 ### 磁瓦信息界面
 * 添加Add信息
-* 
+* ing
 
 ## 前序准备(软件安装)
 
