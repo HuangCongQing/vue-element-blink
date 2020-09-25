@@ -169,7 +169,7 @@ export default {
           barGap: '10%',
           itemStyle: {
             normal: {
-              color: 'rgba(255,144,128,1)',
+              color: 'rgba(0,191,183,1)',
               label: {
                 show: true,
                 textStyle: {
@@ -204,7 +204,7 @@ export default {
           stack: 'total',
           itemStyle: {
             normal: {
-              color: 'rgba(0,191,183,1)',
+              color: 'rgba(255,144,128,1)',
               barBorderRadius: 0,
               label: {
                 show: true,
